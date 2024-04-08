@@ -1,7 +1,7 @@
 import sys
 
 from blackjack import BlackjackGame
-from player import HumanPlayer, AIPlayer
+from player import HumanPlayer, AutoPlayer
 
 if __name__ == "__main__":
     # Default to AI player if no arguments are provided
@@ -10,7 +10,7 @@ if __name__ == "__main__":
     if player_type == "human":
         player = HumanPlayer()
     else:  # Default case
-        player = AIPlayer()
+        player = AutoPlayer()
 
     game = BlackjackGame(player)
     game.play()

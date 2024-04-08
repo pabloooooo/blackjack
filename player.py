@@ -19,7 +19,7 @@ class HumanPlayer(Player):
         return input("Do you want to split? (y/n) ").strip().lower() == 'y'
 
 
-class AIPlayer(Player):
+class AutoPlayer(Player):
     def should_hit(self, hand):
         return hand.value() < 17
 

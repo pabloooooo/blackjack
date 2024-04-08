@@ -1,4 +1,4 @@
-from player import HumanPlayer, AIPlayer, Player
+from player import HumanPlayer, AutoPlayer, Player
 from stack import Deck, HandBJ
 
 
