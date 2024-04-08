@@ -12,7 +12,7 @@ if __name__ == "__main__":
     else:  # Default case
         player = AutoPlayer()
 
-    game = BlackjackGame(player)
+    game = BlackjackGame([player, AutoPlayer()])
     game.play()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
